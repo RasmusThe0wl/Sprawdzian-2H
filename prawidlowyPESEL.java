@@ -13,8 +13,8 @@ public class prawidlowyPESEL {
             int kontrolna = Integer.parseInt(pesel.charAt(10) + "");
             String sumastr = String.valueOf(suma);
             int ostatniacyfra = Integer.parseInt(sumastr.charAt(sumastr.length() - 1) + "");
-            int testowatest = 10 - ostatniacyfra;
-            if (kontrolna == testowatest)
+            int testowa = 10 - ostatniacyfra;
+            if (kontrolna == testowa)
                 return true;
             else
                 return false;
